@@ -1,0 +1,13 @@
+@import "../../theme/palette";
+
+.transactionsList {
+  padding-top: 10vh;
+  padding-bottom: 25vh;
+  background-color: $paletteColor3;
+
+  &__container {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+}
