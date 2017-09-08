@@ -9,8 +9,8 @@ import TransactionsModal from '../../components/TransactionsModal';
 
 export default class Balance extends Component {
     static propTypes = {
-        balance:          PropTypes.number.isRequired,
-        onTransactionAdd: PropTypes.func.isRequired
+        balance:        PropTypes.number.isRequired,
+        transactionAdd: PropTypes.func.isRequired
     };
 
     constructor () {
@@ -22,33 +22,33 @@ export default class Balance extends Component {
     }
 
     state = {
-        modalOpened:     false,
+        isModalOpen:     false,
         transactionType: ''
     };
 
     _handleMoneyIn () {
         this.setState({
-            modalOpened:     true,
+            isModalOpen:     true,
             transactionType: 'inCome'
         });
     }
 
     _handleMoneyOut () {
         this.setState({
-            modalOpened:     true,
+            isModalOpen:     true,
             transactionType: 'outCome'
         });
     }
 
     _handleModalClose () {
         this.setState({
-            modalOpened:     false,
+            isModalOpen:     false,
             transactionType: ''
         });
     }
 
     _handleTransactionAdd (newTransaction) {
-        this.props.onTransactionAdd(newTransaction);
+        this.props.transactionAdd(newTransaction);
     }
 
     render () {
@@ -88,10 +88,10 @@ export default class Balance extends Component {
                     </div>
                 </div>
                 <TransactionsModal
-                    opened = { this.state.modalOpened }
+                    closeModal = { this.handleModalClose }
+                    openModal = { this.state.isModalOpen }
+                    transactionAdd = { this.handleTransactionAdd }
                     type = { this.state.transactionType }
-                    onClose = { this.handleModalClose }
-                    onTransactionAdd = { this.handleTransactionAdd }
                 />
             </div>
         );

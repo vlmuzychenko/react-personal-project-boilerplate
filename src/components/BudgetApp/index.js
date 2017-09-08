@@ -14,22 +14,45 @@ export default class BudgetApp extends Component {
 
     state = {
         balance:      1000,
-        isOpen:       false,
         transactions: []
     };
 
+    componentWillMount () {
+        this.getExchangeRates();
+    }
+
+    test = (data) => {
+        for (const key in data) {
+            console.log(key, data[key]);
+        }
+    };
+
+    getExchangeRates = () => {
+        fetch('https://api.privatbank.ua/p24api/pubinfo?json&exchange&coursid=3', {
+            method: 'GET'
+        })
+            .then((response) => response)
+            .then((result) => result.json())
+            .then((data) => {
+                this.test(data);
+            });
+    };
+
     _handleTransactionAdd (newTransaction) {
+        const { balance, transactions } = this.state;
+
         this.setState({
-            transactions: [newTransaction, ...this.state.transactions],
-            balance:      this.state.balance + newTransaction.value
+            transactions: [newTransaction, ...transactions],
+            balance:      balance + newTransaction.value
         });
     }
 
     render () {
         const transactionList = this.state.transactions.map(
-            ({ category, type, value, _id }) => (
+            ({ category, created, type, value, _id }) => (
                 <Transaction
                     category = { category }
+                    created = { created }
                     key = { _id }
                     type = { type }
                     value = { value }
@@ -41,7 +64,7 @@ export default class BudgetApp extends Component {
             <section className = { Styles.budgetApp }>
                 <Balance
                     balance = { this.state.balance }
-                    onTransactionAdd = { this.handleTransactionAdd }
+                    transactionAdd = { this.handleTransactionAdd }
                 />
                 { transactionList }
             </section>

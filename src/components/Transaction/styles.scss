@@ -2,20 +2,54 @@
 
 .transaction {
   width: 500px;
-  margin: 60px auto 0;
-  padding: 20px 40px;
+  margin: 0 auto 30px;
+  padding: 10px 20px;
   border-radius: 5px;
   box-shadow: 0 3px 6px 0 $paletteColor9;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+
+  &__content {
+    margin-left: 20px;
+  }
 
   &__title {
     text-transform: uppercase;
-    font-size: 24px;
+    font-size: 18px;
+    margin: 0;
+  }
+
+  &__date {
+    font-size: 14px;
+    color: $paletteColor9;
   }
 
   &__value {
     font-size: 24px;
+    margin-left: auto;
+  }
+
+  &__income {
+    font-size: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $paletteColor7;
+    background-image: url(../../theme/assets/down-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50%;
+  }
+
+  &__outcome {
+    font-size: 0;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: $paletteColor8;
+    background-image: url(../../theme/assets/up-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 50%;
   }
 }

@@ -1,7 +1,7 @@
 // Core
 import moment from 'moment';
 
-export const getCurrentTime = () => moment().format('MMMM D h:mm:ss a');
+export const getCurrentTime = () => moment().unix();
 
 export const getUniqueID = (length) => {
     let text = '';
