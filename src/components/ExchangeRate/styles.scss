@@ -1,0 +1,19 @@
+@import "../../theme/palette";
+
+.exchangeContainer {
+  display: flex;
+  justify-content: space-around;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.exchange {
+  display: flex;
+  align-items: center;
+  color: $paletteColor2;
+
+  &__title {
+    margin-right: 10px;
+    font-weight: 800;
+  }
+}

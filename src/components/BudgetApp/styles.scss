@@ -2,4 +2,21 @@
 
 .budgetApp {
   width: 100%;
+  padding-bottom: 50px;
+}
+
+.budgetAppHeader {
+  background-color: $paletteColor5;
+  background: linear-gradient($paletteColor5 0%, $paletteColor6 99%);
+}
+
+.transactionEnter {
+  opacity: .01;
+  transform: translateY(10px);
+}
+
+.transactionEnterActive {
+  transform: translateY(0);
+  transition: 500ms ease-out;
+  opacity: 1;
 }

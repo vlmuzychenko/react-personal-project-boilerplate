@@ -5,11 +5,6 @@ import PropTypes from 'prop-types';
 //Instruments
 import Styles from './styles.scss';
 import { getCurrentTime, getUniqueID } from '../../helpers';
-import TweenMax from 'gsap';
-import {
-    Transition,
-    TransitionGroup
-} from 'react-transition-group';
 
 export default class TransactionsModal extends Component {
     static propTypes = {
@@ -26,8 +21,6 @@ export default class TransactionsModal extends Component {
         this.handleTransactionAdd = ::this._handleTransactionAdd;
         this.resetState = ::this._resetState;
         this.handleModalClose = ::this._handleModalClose;
-        this.modalIn = ::this._modalIn;
-        this.modalOut = ::this._modalOut;
     }
 
     state = {
@@ -76,28 +69,6 @@ export default class TransactionsModal extends Component {
         this.resetState();
     }
 
-    _modalIn () {
-        const { container } = this;
-
-        TweenMax.fromTo(
-            container,
-            0.7,
-            { y: -40, opacity: 0 },
-            { y: 0, opacity: 1 }
-        );
-    }
-
-    _modalOut () {
-        const { container } = this;
-
-        TweenMax.fromTo(
-            container,
-            0.7,
-            { y: 0, opacity: 1 },
-            { y: -40, opacity: 0 }
-        );
-    }
-
     render () {
         const { openModal, type } = this.props;
         const { category } = this.state;
@@ -108,41 +79,32 @@ export default class TransactionsModal extends Component {
 
         return (
             <section className = { Styles.modal }>
-                <Transition
-                    in = { this.props.openModal }
-                    timeout = { 700 }
-                    onEnter = { this.modalIn }
-                    onExit = { this.modalOut }>
-                    <div
-                        className = { Styles.modal__container }
-                        ref = { (container) => this.container = container }>
-                        <h2 className = { Styles.modal__title }>New { type === 'inCome' ? 'Income' : 'Outcome' }</h2>
-                        <input
-                            className = { Styles.modal__input }
-                            placeholder = { type === 'inCome' ? 'Income category' : 'Outcome category' }
-                            type = 'text'
-                            value = { category }
-                            onChange = { this.handleCategoryEnter }
-                        />
-                        <input
-                            className = { Styles.modal__input }
-                            placeholder = { type === 'inCome' ? 'Income value' : 'Outcome value' }
-                            type = 'number'
-                            onChange = { this.handleValueEnter }
-                        />
-                        <button
-                            className = { Styles.modal__btn }
-                            onClick = { this.handleTransactionAdd }>
-                                Add
-                        </button>
-                        <button
-                            className = { Styles.modal__close }
-                            onClick = { this.handleModalClose }>
-                                Close
-                        </button>
-                    </div>
-                </Transition>
+                <h2 className = { Styles.modal__title }>New { type === 'inCome' ? 'Income' : 'Outcome' }</h2>
+                <input
+                    className = { Styles.modal__input }
+                    placeholder = { type === 'inCome' ? 'Income category' : 'Outcome category' }
+                    type = 'text'
+                    value = { category }
+                    onChange = { this.handleCategoryEnter }
+                />
+                <input
+                    className = { Styles.modal__input }
+                    placeholder = { type === 'inCome' ? 'Income value' : 'Outcome value' }
+                    type = 'number'
+                    onChange = { this.handleValueEnter }
+                />
+                <button
+                    className = { Styles.modal__btn }
+                    onClick = { this.handleTransactionAdd }>
+                        Add
+                </button>
+                <button
+                    className = { Styles.modal__close }
+                    onClick = { this.handleModalClose }>
+                        Close
+                </button>
             </section>
+
         );
     }
 }

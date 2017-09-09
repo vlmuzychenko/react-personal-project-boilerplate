@@ -2,22 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="38cd4c35-bcc4-4a7e-9c7f-235f0530f8fc" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/TransactionsList/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/TransactionsList/styles.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/theme/assets/cross.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/theme/assets/homer.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/theme/assets/lisa.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/theme/assets/post.png" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/ExchangeRate/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/ExchangeRate/styles.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/index.html" afterPath="$PROJECT_DIR$/public/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Balance/index.js" afterPath="$PROJECT_DIR$/src/components/Balance/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Balance/styles.scss" afterPath="$PROJECT_DIR$/src/components/Balance/styles.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/BudgetApp/index.js" afterPath="$PROJECT_DIR$/src/components/BudgetApp/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Transaction/index.js" afterPath="$PROJECT_DIR$/src/components/Transaction/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/Transaction/styles.scss" afterPath="$PROJECT_DIR$/src/components/Transaction/styles.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/BudgetApp/styles.scss" afterPath="$PROJECT_DIR$/src/components/BudgetApp/styles.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/TransactionsModal/index.js" afterPath="$PROJECT_DIR$/src/components/TransactionsModal/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/containers/App/styles.scss" afterPath="$PROJECT_DIR$/src/containers/App/styles.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/helpers/index.js" afterPath="$PROJECT_DIR$/src/helpers/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/theme/reset.css" afterPath="$PROJECT_DIR$/src/theme/reset.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/TransactionsModal/styles.scss" afterPath="$PROJECT_DIR$/src/components/TransactionsModal/styles.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,62 +23,29 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="react-personal-project-boilerplate" />
+  </component>
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/Balance/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="466">
-              <caret line="94" column="18" lean-forward="false" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
+            <state relative-caret-position="1411">
+              <caret line="84" column="23" lean-forward="false" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="23" />
               <folding>
                 <element signature="e#100#135#0" expanded="true" />
+                <marker date="1504911928000" expanded="true" signature="2432:4356" ph="..." />
+                <marker date="1504911928000" expanded="true" signature="2497:2701" ph="..." />
+                <marker date="1504911928000" expanded="true" signature="2755:3463" ph="..." />
+                <marker date="1504911928000" expanded="true" signature="2824:3440" ph="..." />
+                <marker date="1504911928000" expanded="true" signature="2857:3098" ph="..." />
+                <marker date="1504911928000" expanded="true" signature="3131:3413" ph="..." />
+                <marker date="1504911928000" expanded="true" signature="3540:4337" ph="..." />
+                <marker date="1504911928000" expanded="true" signature="3573:4314" ph="..." />
+                <marker date="1504911928000" expanded="true" signature="3745:4280" ph="..." />
+                <marker date="1504911928000" expanded="true" signature="3939:4249" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="styles.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/TransactionsModal/styles.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="21" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/components/TransactionsModal/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2044">
-              <caret line="144" column="22" lean-forward="false" selection-start-line="144" selection-start-column="22" selection-end-line="144" selection-end-column="22" />
-              <folding>
-                <element signature="e#7#48#0" expanded="true" />
-                <element signature="e#100#135#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/Transaction/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="6" lean-forward="true" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
-              <folding>
-                <element signature="e#7#48#0" expanded="true" />
-                <element signature="e#100#135#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="palette.scss" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/theme/palette.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="14" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -92,11 +53,60 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/BudgetApp/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            <state relative-caret-position="402">
+              <caret line="122" column="60" lean-forward="true" selection-start-line="122" selection-start-column="60" selection-end-line="122" selection-end-column="60" />
               <folding>
                 <element signature="e#64#99#0" expanded="true" />
+                <marker date="1504962682000" expanded="true" signature="2779:3339" ph="..." />
+                <marker date="1504962682000" expanded="true" signature="3070:3306" ph="..." />
+                <marker date="1504962682000" expanded="true" signature="3437:4100" ph="..." />
+                <marker date="1504962682000" expanded="true" signature="4002:4077" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/components/TransactionsModal/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="274">
+              <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
+              <folding>
+                <element signature="e#100#135#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ExchangeRate/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="75" lean-forward="false" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
+              <folding>
+                <element signature="e#7#48#0" expanded="true" />
+                <element signature="e#100#135#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/ExchangeRate/styles.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="styles.scss" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/components/Balance/styles.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="159">
+              <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -112,6 +122,11 @@
       <find>props</find>
       <find>onClose</find>
       <find>opened</find>
+      <find>getUniqueID</find>
+      <find>_id</find>
+      <find>balance</find>
+      <find>id</find>
+      <find>conso</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -125,11 +140,15 @@
         <option value="$PROJECT_DIR$/src/helpers/index.js" />
         <option value="$PROJECT_DIR$/src/components/Transaction/index.js" />
         <option value="$PROJECT_DIR$/src/components/Transaction/styles.scss" />
-        <option value="$PROJECT_DIR$/src/components/BudgetApp/index.js" />
-        <option value="$PROJECT_DIR$/src/components/Balance/styles.scss" />
         <option value="$PROJECT_DIR$/src/components/TransactionsModal/styles.scss" />
-        <option value="$PROJECT_DIR$/src/components/TransactionsModal/index.js" />
+        <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/components/Balance/index.js" />
+        <option value="$PROJECT_DIR$/src/components/BudgetApp/index.js" />
+        <option value="$PROJECT_DIR$/src/components/BudgetApp/styles.scss" />
+        <option value="$PROJECT_DIR$/src/components/ExchangeRate/styles.scss" />
+        <option value="$PROJECT_DIR$/src/components/Balance/styles.scss" />
+        <option value="$PROJECT_DIR$/src/components/ExchangeRate/index.js" />
+        <option value="$PROJECT_DIR$/src/components/TransactionsModal/index.js" />
       </list>
     </option>
   </component>
@@ -145,8 +164,9 @@
     <handled-path value="$PROJECT_DIR$/node_modules" />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="y" value="23" />
     <option name="width" value="1280" />
-    <option name="height" value="800" />
+    <option name="height" value="725" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -200,6 +220,13 @@
               <item name="react-personal-project-boilerplate" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="ExchangeRate" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="react-personal-project-boilerplate" type="b2602c69:ProjectViewProjectNode" />
+              <item name="react-personal-project-boilerplate" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="Transaction" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -208,38 +235,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="TransactionsModal" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-personal-project-boilerplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-personal-project-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-personal-project-boilerplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-personal-project-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="containers" type="462c0819:PsiDirectoryNode" />
-              <item name="App" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-personal-project-boilerplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-personal-project-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="helpers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-personal-project-boilerplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-personal-project-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="theme" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="react-personal-project-boilerplate" type="b2602c69:ProjectViewProjectNode" />
-              <item name="react-personal-project-boilerplate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="theme" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -296,12 +291,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1504704552926</updated>
-      <workItem from="1504704555728" duration="17698000" />
+      <workItem from="1504704555728" duration="36497000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17698000" />
+    <option name="totallyTimeSpent" value="36497000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -316,7 +311,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287483" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1477363" sideWeight="0.5048143" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -389,14 +384,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/BudgetApp/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/helpers/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -429,18 +416,80 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Balance/styles.scss">
+    <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="117" column="1" lean-forward="false" selection-start-line="117" selection-start-column="1" selection-end-line="117" selection-end-column="1" />
+        <state relative-caret-position="102">
+          <caret line="6" column="84" lean-forward="false" selection-start-line="6" selection-start-column="84" selection-end-line="6" selection-end-column="84" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/TransactionsModal/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="41" column="37" lean-forward="false" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/Transaction/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="6" lean-forward="true" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+        <state relative-caret-position="68">
+          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
+          <folding>
+            <element signature="e#100#135#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/BudgetApp/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="69" lean-forward="false" selection-start-line="9" selection-start-column="69" selection-end-line="9" selection-end-column="69" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Balance/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1411">
+          <caret line="84" column="23" lean-forward="false" selection-start-line="84" selection-start-column="16" selection-end-line="84" selection-end-column="23" />
+          <folding>
+            <element signature="e#100#135#0" expanded="true" />
+            <marker date="1504911928000" expanded="true" signature="2432:4356" ph="..." />
+            <marker date="1504911928000" expanded="true" signature="2497:2701" ph="..." />
+            <marker date="1504911928000" expanded="true" signature="2755:3463" ph="..." />
+            <marker date="1504911928000" expanded="true" signature="2824:3440" ph="..." />
+            <marker date="1504911928000" expanded="true" signature="2857:3098" ph="..." />
+            <marker date="1504911928000" expanded="true" signature="3131:3413" ph="..." />
+            <marker date="1504911928000" expanded="true" signature="3540:4337" ph="..." />
+            <marker date="1504911928000" expanded="true" signature="3573:4314" ph="..." />
+            <marker date="1504911928000" expanded="true" signature="3745:4280" ph="..." />
+            <marker date="1504911928000" expanded="true" signature="3939:4249" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/Balance/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ExchangeRate/styles.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="20" lean-forward="false" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/ExchangeRate/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="75" lean-forward="false" selection-start-line="25" selection-start-column="75" selection-end-line="25" selection-end-column="75" />
           <folding>
             <element signature="e#7#48#0" expanded="true" />
             <element signature="e#100#135#0" expanded="true" />
@@ -448,40 +497,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/TransactionsModal/styles.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="21" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/BudgetApp/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        <state relative-caret-position="402">
+          <caret line="122" column="60" lean-forward="true" selection-start-line="122" selection-start-column="60" selection-end-line="122" selection-end-column="60" />
           <folding>
             <element signature="e#64#99#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/Balance/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="466">
-          <caret line="94" column="18" lean-forward="false" selection-start-line="94" selection-start-column="18" selection-end-line="94" selection-end-column="18" />
-          <folding>
-            <element signature="e#100#135#0" expanded="true" />
+            <marker date="1504962682000" expanded="true" signature="2779:3339" ph="..." />
+            <marker date="1504962682000" expanded="true" signature="3070:3306" ph="..." />
+            <marker date="1504962682000" expanded="true" signature="3437:4100" ph="..." />
+            <marker date="1504962682000" expanded="true" signature="4002:4077" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/TransactionsModal/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2044">
-          <caret line="144" column="22" lean-forward="false" selection-start-line="144" selection-start-column="22" selection-end-line="144" selection-end-column="22" />
+        <state relative-caret-position="274">
+          <caret line="83" column="0" lean-forward="false" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding>
-            <element signature="e#7#48#0" expanded="true" />
             <element signature="e#100#135#0" expanded="true" />
           </folding>
         </state>
