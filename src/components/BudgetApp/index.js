@@ -30,9 +30,27 @@ export default class BudgetApp extends Component {
 
     componentWillMount () {
         this.getExchangeRates();
+
+        const savedTransactions = JSON.parse(localStorage.getItem('transactions'));
+        const savedBalance  = JSON.parse(localStorage.getItem('balance'));
+
+        if (savedTransactions) {
+            this.setState({
+                balance:      savedBalance,
+                transactions: savedTransactions
+            });
+        }
     }
 
-    test = (data) => {
+    componentDidUpdate () {
+        const savedTransactions = JSON.stringify(this.state.transactions);
+        const savedBalance = JSON.stringify(this.state.balance);
+
+        localStorage.setItem('transactions', savedTransactions);
+        localStorage.setItem('balance', savedBalance);
+    }
+
+    formatData = (data) => {
         const ccyRecord = [];
         const buyRecord = [];
         const saleRecord = [];
@@ -71,7 +89,7 @@ export default class BudgetApp extends Component {
             })
             .then((response) => response)
             .then((data) => {
-                this.test(data);
+                this.formatData(data);
             })
             .then(() => this.setState({ isExchangeLoading: false }));
     };

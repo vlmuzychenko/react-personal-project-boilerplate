@@ -51,16 +51,20 @@ export default class TransactionsModal extends Component {
     }
 
     _handleTransactionAdd () {
-        const newTransaction = {
-            _id:     getUniqueID(15),
-            created: getCurrentTime(),
-            type:    this.props.type,
-            ...this.state
-        };
+        const { category, value } = this.state;
 
-        this.props.closeModal();
-        this.props.transactionAdd(newTransaction);
-        this.resetState();
+        if (category && value) {
+            const newTransaction = {
+                _id:     getUniqueID(15),
+                created: getCurrentTime(),
+                type:    this.props.type,
+                ...this.state
+            };
+
+            this.props.closeModal();
+            this.props.transactionAdd(newTransaction);
+            this.resetState();
+        }
     }
 
     _handleModalClose () {
