@@ -4,6 +4,7 @@ import React, { Component } from 'react';
 //Instruments
 import Styles from './styles.scss';
 import Balance from '../../components/Balance';
+import Controls from '../../components/Controls';
 import ExchangeRate from '../../components/ExchangeRate';
 import Transaction from '../../components/Transaction';
 import TweenMax from 'gsap';
@@ -17,10 +18,12 @@ export default class BudgetApp extends Component {
         super();
         this.handleTransactionAdd = ::this._handleTransactionAdd;
         this.fadeFromBottom = ::this._fadeFromBottom;
+        this.handleFilterSelect = ::this._handleFilterSelect;
     }
 
     state = {
         balance:           1000,
+        filter:            '',
         ccy:               [],
         buy:               [],
         sale:              [],
@@ -114,8 +117,18 @@ export default class BudgetApp extends Component {
         );
     }
 
+    _handleFilterSelect (filterQuery) {
+        this.setState({
+            filter: filterQuery
+        });
+    }
+
     render () {
-        const transactionList = this.state.transactions.map(
+        const filteredTransactions = this.state.transactions.filter((transaction) =>
+            transaction.type.indexOf(this.state.filter) !== -1
+        );
+
+        const transactionList = filteredTransactions.map(
             ({ category, created, type, value, _id }) => (
                 <CSSTransition
                     classNames = { {
@@ -147,6 +160,9 @@ export default class BudgetApp extends Component {
                     />
                     <Balance
                         balance = { this.state.balance }
+                    />
+                    <Controls
+                        filterSelect = { this.handleFilterSelect }
                         transactionAdd = { this.handleTransactionAdd }
                     />
                 </div>
